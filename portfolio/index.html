@@ -65,7 +65,10 @@
                     <a>Portfolio</a>
                   </li>
                   <li>
-                    <a href="../#contact">Contact</a>
+                    <a href="/#contact">Contact</a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="http://www.imdb.com/name/nm2929934/">IMDB</a>
                   </li>
                 </ul>
             </div>
@@ -94,8 +97,9 @@
 	    <iframe style="display: block" class="auto-margin" width="533" height="300" src="https://www.youtube.com/embed/{{ item.youtube | remove: "https://www.youtube.com/watch?v=" }}" frameborder="0" allowfullscreen></iframe>
           </div>
           <div class="col-md-5">
-            <h3 class="no-margin"><a id="{{ item.path | url_encode }}"></a>{{ item.title }}</h3>
-            <p>{{ item.content }}</p>
+            <h3 style="margin-top: 0"><a id="{{ item.path | url_encode }}"></a>{{ item.title }}</h3>
+            <p><b>For:</b> {{ item.client }}<br>
+            <b>Directed By:</b> {{ item.director }}
           </div>
         </div>
         <!-- {% increment var %} -->
@@ -122,12 +126,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
     <!-- Plugin JavaScript -->
-    <!--script src="../js/jquery.easing.min.js"></script>
-    <script src="../js/jquery.fittext.js"></script>
-    <script src="../js/wow.min.js"></script-->
+    <!--script src="/js/jquery.easing.min.js"></script>
+    <script src="/js/jquery.fittext.js"></script>
+    <script src="/js/wow.min.js"></script-->
 
     <!-- Custom Theme JavaScript -->
-    <!--script src="../js/creative.js"></script-->
+    <!--script src="/js/creative.js"></script-->
 </body>
 
 </html>
