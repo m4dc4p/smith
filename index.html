@@ -91,11 +91,11 @@
         </div>
       </div>
       <div class="container-fluid">
+	<div class="row no-gutter">
         {% assign showcase_items = site.data.showcase | map: 'item_name'  %}
         {% for item in showcase_items %}
         {% for candidate in site.portfolio %}
         {% if candidate.path contains item %}
-	<div class="row no-gutter">
           <div class="col-lg-4 col-sm-6">
             <a href="portfolio#{{candidate.path | url_encode }}" class="portfolio-box">
               <img src="{{ candidate.thumbnail }}" class="img-responsive" alt="">
@@ -111,36 +111,6 @@
         {% endif %}
         {% endfor %}
         {% endfor %}
-          <!--div class="col-lg-4 col-sm-6">
-            <a href="portfolio#p2" class="portfolio-box">
-              <img src="img/portfolio/grimm.png" class="img-responsive"  alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Grimm
-                  </div>
-                  <div class="project-name">
-                    Putting the monster in monstrous.
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a href="portfolio#p3" class="portfolio-box">
-              <img src="img/portfolio/fallon.png" class="img-responsive" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Jimmy Fallon
-                  </div>
-                  <div class="project-name">
-                    I had nothing to do with this but it's hilarious.
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div-->
         </div>
       </div>
     </section>
